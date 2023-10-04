@@ -1,6 +1,5 @@
 import getpass
 from telnetlib import Telnet
-import sys
 import time
 
 HOST = "192.168.122.10"
