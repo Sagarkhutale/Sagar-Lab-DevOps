@@ -16,7 +16,7 @@ for RTR in Device_List:
 
     SSH_Access = Session.invoke_shell()
     SSH_Access.send (b'config t\n')
-    for N in range (2,5):
+    for N in range (1,5):
         SSH_Access.send('int loopback '+str(N) + '\n')
         SSH_Access.send('ip address 1.1.1.' +str(N) + ' 255.255.255.255\n')
 
